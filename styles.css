@@ -1,0 +1,96 @@
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+/* Header styling */
+h1 {
+  margin-bottom: 20px;
+}
+
+/* Input field styling for decisions */
+.decision-inputs {
+  margin-bottom: 20px; /* Adds space between input fields and dice */
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  width: 200px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Dice container styling */
+.dice-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+/* Dice styling */
+.dice {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(0deg) rotateY(0deg);
+  transition: transform 1s ease-out; /* Smooth transition for rotation */
+}
+
+/* Dice face styling */
+.face {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border: 2px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Positioning each dice face */
+.face.one { transform: rotateY(0deg) translateZ(50px); }
+.face.two { transform: rotateY(90deg) translateZ(50px); }
+.face.three { transform: rotateY(180deg) translateZ(50px); }
+.face.four { transform: rotateY(-90deg) translateZ(50px); }
+.face.five { transform: rotateX(90deg) translateZ(50px); }
+.face.six { transform: rotateX(-90deg) translateZ(50px); }
+
+/* Roll button styling */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 30px; /* Adds space between dice and button */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Result text styling */
+#result {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}

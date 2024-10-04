@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Realistic Dice Roller - Decision Maker</title>
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <h1>Decision Maker</h1>
+        
+        <!-- Decision Inputs -->
+        <div class="decision-inputs">
+            <input type="text" id="decision1" placeholder="Enter Decision 1">
+            <input type="text" id="decision2" placeholder="Enter Decision 2">
+        </div>
+
+        <!-- Dice Rolling Section -->
+        <div class="dice-container">
+            <div class="dice" id="dice1">
+                <!-- Each dice face is represented here -->
+                <div class="face one">1</div>
+                <div class="face two">2</div>
+                <div class="face three">3</div>
+                <div class="face four">4</div>
+                <div class="face five">5</div>
+                <div class="face six">6</div>
+            </div>
+            <div class="dice" id="dice2">
+                <div class="face one">1</div>
+                <div class="face two">2</div>
+                <div class="face three">3</div>
+                <div class="face four">4</div>
+                <div class="face five">5</div>
+                <div class="face six">6</div>
+            </div>
+        </div>
+
+        <!-- Roll Button -->
+        <button id="rollButton" onclick="rollDice()">Roll the Dice!</button>
+
+        <!-- Display Result -->
+        <h2 id="result"></h2>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
